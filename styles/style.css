@@ -1,1 +1,375 @@
-/* место для вашего кода */
+body {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 93px 63px 91px 0;
+  width: 1052px;
+  background-color: #fff;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 31.3px;
+  padding: 0 0 0 26px;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.13px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  font-size: 18px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.header__link-third {
+  padding: 0 0px 0 2px;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+
+.header__logo {
+  padding: 0 152px 0 0;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 5px 0;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+.contact-info__link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  width: 136px;
+  line-height: 24.3px;
+  word-spacing: 1px;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1100px;
+  padding: 174px 0 51.5px;
+  z-index: 0;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / .6);
+  z-index: -1;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  letter-spacing: 30px;
+}
+
+.aligned-text_start {
+  margin: 0 0 0 50px;
+}
+
+.aligned-text_center {
+  align-self: center;
+  padding: 0 60px 0 0;
+  line-height: 105px;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+  margin: 0 21px 0 0;
+  line-height: 90px;
+}
+
+.aligned-text_start .letter-spacing-extended {
+  margin: 0 28px 0 0;
+}
+
+.aligned-text_center .letter-spacing-extended {
+  display: inline-block;
+}
+
+.aligned-text_center .no-letter-spacing {
+  letter-spacing: normal;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.aligned-text_right .letter-spacing-extended {
+  display: inline-block;
+}
+
+.aligned-text_right .no-letter-spacing {
+  display: inline-block;
+  margin-left: 29px;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  margin: 139px 0 0 0;
+  width: 100%;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.cover__description-text {
+  margin: 13px 0 0 77px;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  margin: 0 51px 0 0;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.lots {
+  padding: 181px 24px 0 24px;
+}
+
+.lots__heading {
+  padding: 0 0 27px 38px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+  width: 330px;
+  min-height: 450px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 51px 40px 48px 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  color: #fff;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  max-width: 260px;
+  font-size: 22px;
+  margin-bottom: auto;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.card__title-underline {
+  border-bottom: 1px solid white;
+}
+
+.card__text {
+  z-index: 1;
+  font-size: 20px;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin: 29px 0 0 40px;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 58px;
+  padding: 180px 24px;
+}
+
+.logo__column {
+  margin: 4px 14px 0px 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__column {
+  margin: 103px 0 0 0;
+  justify-self: end;
+  align-self: center;
+}
+
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  margin: auto;
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  margin: 0 0 100px 0;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 24px;
+  word-spacing: 1px;
+}
+
+.about__paragraph-intro {
+  margin: 0 0 24px 0;
+}
+
+.about__highlight {
+  margin: 0 0 0 -1px;
+}
+
+.about__adjust-word-spacing {
+  word-spacing: -2px
+}
+
+.about__adjust-margin {
+  margin: 0 0 0 -3px;
+}
+
+.about__normal-spacing {
+  word-spacing: 0;
+}
+
+.about__adjust-word-spacing-small {
+  word-spacing: -1px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 51px 84px 50px;
+}
+
+.footer__menu {
+  margin: 0 0 0 35px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.footer__menu-link_active {
+  border-bottom: none;
+}
+
+.footer__menu-link-highlighted {
+  padding: 0 0px 0 2px;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+  gap: 47px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
